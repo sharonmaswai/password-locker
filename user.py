@@ -2,7 +2,7 @@ import pyperclip
 class User:
 
     '''
-    A class in which instances can be addedself.
+    A class in which new instances for accounts are added 
 
     '''
 
@@ -13,5 +13,3 @@ class User:
         self.username=username
         self.email_address=email
         self.password=password
-
-        
