@@ -15,7 +15,7 @@ def save_users_credentials(user):
 
 def find_user_by_name(username):
   '''
-  fThis function finds a user using the username they entered
+  This function finds a user using the username they entered
   '''
   return User.find_user_by_name(username)
 
@@ -39,4 +39,4 @@ def save_credentials():
     Function that saves the created credentials.
     '''
 
-    Credentials.save_credentials()    
+    Credentials.save_credentials()
