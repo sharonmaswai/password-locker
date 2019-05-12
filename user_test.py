@@ -36,7 +36,7 @@ class TestUser(unittest.TestCase):
          '''
          Checks if a user can save their credentials by appending the credentials to the user credentials list
          '''
-         self.new_credential.save_credential()
+         self.new_user_credentials.save_credentials()
          self.assertEqual(len(Credentials.user_credentials),1)
 
 
