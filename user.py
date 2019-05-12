@@ -15,3 +15,17 @@ class User:
     def save_user_info(self):
 
         User.user_info.append(self)
+
+
+
+class Credentials:
+  '''
+  Class that generates new instances of user credentials of the application
+  '''
+  user_credentials= [] #an empty list
+
+  def __init__(self,platform,username,password):
+
+    self.platform = name
+    self.username = username
+    self.password = password

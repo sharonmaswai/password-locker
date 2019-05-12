@@ -12,6 +12,7 @@ class TestUser(unittest.TestCase):
      def setUp(self):
 
         self.new_user = User("Sharon","mas7000")
+        self.new_user_credentials=Credentials("instagram","sharonmaswai","mas7000")
 
      def test_if_object_is_initialized(self):
          '''
@@ -28,7 +29,13 @@ class TestUser(unittest.TestCase):
          '''
 
          self.new_user.save_user_info()
-         self.assertEqual(len(Users.users_list),1)
+         self.assertEqual(len(User.user_info),1)
+
+     def test_user_validation_and_login(self):
+
+         '''
+         Test if user can be validated and log into their existing account.
+         '''
 
 
 
