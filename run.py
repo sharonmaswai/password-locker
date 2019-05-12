@@ -40,3 +40,13 @@ def save_credentials():
     '''
 
     Credentials.save_credentials()
+
+def main():
+    print("Hello!!\n Welcome.")
+    print("\n")
+    name=input("What is your name?")
+    username=input("Create your username:")
+    password=input("Now create your unique password:")
+    print(f" Welcome{username}, Please select the next step.")
+
+    while True:
