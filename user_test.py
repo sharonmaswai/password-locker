@@ -4,7 +4,7 @@ from user import User
 
 class TestUser(unittest.TestCase):
      def tearDown(self):
-        Users.user_info=[]
+        User.user_info=[]
         '''
         Ensures the user_info is clean before the next method is applied
         '''
