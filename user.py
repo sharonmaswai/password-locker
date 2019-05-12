@@ -12,4 +12,6 @@ class User:
         self.username=username
         self.password=password
 
-    
+    def save_user_info(self):
+
+        User.user_info.append(self)
