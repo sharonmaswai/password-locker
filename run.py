@@ -66,3 +66,23 @@ def main():
            save_credentials(create_account(username,password))
            print('\n')
            print(f"Your {platform} credential have been received and saved.")
+
+        elif short_code =='2':
+           print("Enter the username of the account you wish to find:")
+
+           search_username = input()
+           if find_user_by_name(search_user):
+              search_user = find_username(search_username)
+              print(f"{search_user.platform} {search_user.username")
+
+              print(f"Password...{search_user.password}")
+
+            else:
+            print("The user does not exist.")
+
+        elif short_code=='3':
+            print(f"Goodbye, {username}")
+
+
+if __name__ == '__main__':
+  main()
