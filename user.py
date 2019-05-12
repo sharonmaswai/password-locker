@@ -2,14 +2,12 @@ import pyperclip
 class User:
 
     '''
-    A class in which new instances for accounts are added 
+    A class in which new instances for accounts are added
 
     '''
 
     user_info =[]
-    def __init__(self,first_name,surname,username,email_address,password):
-        self.first_name=first_name
-        sel.surname=surname
+    def __init__(self,username,password):
+
         self.username=username
-        self.email_address=email
         self.password=password
