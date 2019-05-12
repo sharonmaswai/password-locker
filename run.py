@@ -50,3 +50,19 @@ def main():
     print(f" Welcome{username}, Please select the next step.")
 
     while True:
+        save_credentials(create_new_credentials(platform,username,password))
+
+        print("Select any of the following short codes:1- Create a new account, 2-Find a user, 3- Exit" )
+        if short_code == '1':
+           print("New account")
+           platform = input("Enter platform i.e facebook, instagram, twitter etc:")
+
+           print("Usename:")
+           username = input()
+
+           print("Password:")
+           password = input()
+
+           save_credentials(create_account(username,password))
+           print('\n')
+           print(f"Your {platform} credential have been received and saved.")
