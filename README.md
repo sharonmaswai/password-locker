@@ -11,8 +11,10 @@ Password Locker is an application that is run in the python terminal and is used
 | Behavior | Input | Output |
 | --- | --- | --- |
 | Show navigation codes | Terminal: $./run.py | Navigation options |
-| Create account prompt | Choose 1 | Enter platform, username and password |
-| Exit application | enter exit() |  |
+| Create account prompt | Choose ca | Enter platform, username and password |
+| Saving credentials | Enter "y"| Credentials are saved|
+| Find user by username| Choose fu | User's credentials |
+| Exit application | enter "x"| Return to short_code  |
 
 ## Requirements
 
